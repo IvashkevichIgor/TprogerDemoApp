@@ -39,4 +39,9 @@ public class DefaultBookService implements BookService{
     public void addBook(Book book) {
         bookRepository.save(mapper.bookToBookEntity(book));
     }
+
+    @Override
+    public List<Book> findByAuthor(String author) {
+        return null;
+    }
 }
